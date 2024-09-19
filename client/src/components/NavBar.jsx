@@ -1,7 +1,6 @@
-import React from 'react'
-import { assets } from '../assets/assets'
-import { NavLink, Link } from 'react-router-dom'
-import { useState } from 'react'
+import React, { useState } from 'react';
+import { assets } from '../assets/assets';
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -10,7 +9,7 @@ const NavBar = () => {
     return (
         <div className='flex items-center justify-between py-5 font-medium'>
 
-            <img src={assets.logo} className='w-36' alt="company logo" />
+            <Link to='/'><img src={assets.logo} className='w-36' alt="company logo" /></Link>
 
             <ul className='hidden sm:flex gap-5 text-sm text-grey-700'>
 
